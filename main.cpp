@@ -97,6 +97,8 @@ bool loadMedia()
     {
         // Phát nhạc nền
         Mix_PlayMusic( gMusic, -1 ); // -1 để lặp vô hạn
+	Mix_VolumeMusic(MIX_MAX_VOLUME / 4);
+		//max là 128
     }
 
 	return success;
